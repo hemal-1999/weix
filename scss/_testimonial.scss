@@ -1,0 +1,49 @@
+/*
+======================================================================
+                            TESTIMONIAL
+======================================================================
+*/
+.testimonial {
+    margin: 90px 0;
+    .testimonial-box-parent {
+        // testimonial box ====================================
+        .testimonial-box {
+            position: relative;
+
+            .left-quote,
+            .right-quote {
+                width: 50px;
+                position: absolute;
+            }
+
+            .left-quote {
+                top: 80%;
+                left: 10px;
+            }
+
+            .right-quote {
+                top: 80%;
+                right: 10px;
+            }
+        }
+        .client-review-content{
+            text-align: center;
+            h6{
+                font-weight: 600;
+                margin-top: 30px;
+                margin-bottom: 8px;
+            }
+            p.client-designation{
+                font-size: 14px;
+                color: #EE3158;
+            }
+            p.client-review{
+                font-size: 14px;
+                line-height: 2.1;
+                color: lighten(#000,60%);
+            }
+        }
+    }
+    .owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{width: 40px;height: 4px;background-color: red !important;border-radius: 0;}
+}
+.owl-theme .owl-dots .owl-dot span,.owl-theme .owl-dots .owl-dot:hover span{width: 40px;height: 4px;border-radius: 0;background:#869791;margin: 0;}

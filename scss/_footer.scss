@@ -1,0 +1,27 @@
+.footer{
+    margin-top: 60px;
+    padding: 90px 0;
+    background-color: #303030;
+    ul{
+        text-align: center;
+        margin-bottom: 20px;
+        li{
+            display: inline-block;
+            a{
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                transition: .3s;
+                &:hover{
+                    background-color: #EE3158;
+                }
+                i{
+                    font-size: 19px;
+                    line-height: 40px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+/*
+=========================================================================================
+                                        ABOUT
+=========================================================================================
+*/
+.about{
+    padding: 100px 0;
+    background-image: linear-gradient(to right,rgba(#fff,.5),#fff),url(../images/dots.png);
+    .service-boxes{
+        i{
+            font-size: 40px;
+            color: #fff;
+            background-color: #EE3158;
+            width: 70px;
+            height: 70px;
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            line-height: 65px;
+            text-align: center;
+        }
+        p.service-box-desc{
+            color: #777;
+            line-height: 1.7;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    }
+}

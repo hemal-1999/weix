@@ -1,0 +1,38 @@
+/*
+================================================================================
+                                NUMBERS SECTION
+================================================================================
+*/
+
+.numbers{
+    background-image: linear-gradient(rgba(#000,.4),rgba(#000,.4)),url(../images/bg3.jpg);
+    @extend %generic-background-image;
+    padding: 100px 0;
+    // number box ===================================
+    .number-box{
+        margin-bottom: 30px;
+        ul{
+            text-align: center;
+            color: #fff;
+            li{
+                i{
+                    color: #EE3158;
+                    font-size: 50px;
+                    margin-bottom: 50px;
+                    display: block;
+                    text-align: center;
+                }
+            }
+            li.number{
+                font-weight: 600;
+                font-size: 55px;
+                margin-bottom: 30px;
+            }
+            li.title{
+                font-size: 18px;
+                font-weight: 300;
+                color: darken(#fff,10%);
+            }
+        }
+    }
+}

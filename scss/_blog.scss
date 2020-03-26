@@ -1,0 +1,66 @@
+/*
+=========================================================================================
+                                    BLOG SECTION
+=========================================================================================
+*/
+
+
+.blog{
+    background-color: #FBFAFA;
+    padding-top: 70px;
+    padding-bottom: 120px;
+    margin-top: 60px;
+    // blog box ===========================================
+    &-box{
+        background-color: #fff;
+        box-shadow: 0 0 25px rgba(0,0,0,0.04);
+        margin-top: 60px;
+        &-image{
+            overflow: hidden;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                transition: .5s;
+            }
+        }
+        // blog box description =============================
+        &-desc{
+            text-align: center;
+            padding: 30px;
+            .name-and-date{
+                margin: 25px 0;
+                ul{
+                    text-align: center;
+                    li{
+                        display: inline-block;
+                        a{
+                            color: lighten(#000,70%);
+                            margin-left: 5px;
+                            margin-right: 5px;
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        a{
+            h3{
+                font-weight: 700;
+                color: #000;
+                line-height: 1.7;
+                font-size: 27px;
+                margin-bottom: 20px;
+            }
+        }
+        a.read-more{
+            text-transform: capitalize;
+            font-size: 20px;
+            color: #E42F54;
+            border-bottom: .5px solid #E42F54;
+        }
+    }
+}

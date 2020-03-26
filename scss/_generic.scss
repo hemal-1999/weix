@@ -1,0 +1,185 @@
+
+
+// generic title ==========================
+.generic-title{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    p.sub-title{
+        font-size: 14px;
+        color: #000;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+    h2{
+        margin-top: 20px;
+        font-size: 25px;
+        margin-bottom: 25px;
+        font-weight: 900;
+    }
+    p.title-desc{
+        color: #777;
+        line-height: 1.6;
+    }
+}
+// generic-head-section =============================
+.head-section{
+    padding-top: 100px;
+    padding-bottom: 60px;
+    position: relative;
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &::before{
+        width: 200px;
+        height: 1px;
+        background-color: #eee;
+    }
+    &::after{
+        width: 50px;
+        height: 5px;
+        background-color: #EE3158;
+        margin-bottom: -2.5px;
+        border-radius: 2px;
+    }
+    // left head section =======================
+    .left-head-section{
+        padding-bottom: 30px;
+        text-align: center;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 8px;
+            height: 8px;
+            background-color: #000;
+        }
+        p{
+            font-weight: 500;
+            letter-spacing: 3.5px;
+            word-spacing: 4.5px;
+            font-size: 16px;
+            font-family: 'Rubik', sans-serif;
+            margin-right: 30px;
+            color: #EE3158;
+        }
+        h2{
+            font-weight: 900;
+            font-size: 35px;
+            text-transform: uppercase;
+        }
+    }
+    // right head section =====================================
+    .right-head-section{
+        width: 80%;
+        right: auto;
+        p{
+            font-size: 20px;
+            color: lighten(#000,60%);
+            line-height: 1.9;
+        }
+    }
+}
+
+
+
+
+
+// generic button ===============
+.generic-btn{
+    text-transform: capitalize;
+    padding: 8px 30px;
+    border-radius: 100px;
+    display: inline-block;
+    z-index: 3;
+    overflow: hidden;
+}
+.white-btn,.violet-btn{
+    position: relative;
+    background-color: #fff;
+    transition: .5s;
+    overflow: hidden;
+    &::after,&::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0%;
+        height: 100%;
+        z-index: -1;
+        transition: all .5s;
+    }
+    &::before{
+        opacity: .6;
+        z-index: -2;
+    }
+    &:hover:before{
+        width: 100%;
+    }
+    &:hover::after{
+        width: 100%;
+        transition-delay: .3s;
+    }
+}
+
+
+/* separate button color =============== */
+
+
+// white btn ========================
+.white-btn{
+    color: #EE3158 !important;
+    border: .5px solid #fff;
+    &:hover{
+        color: #fff !important;
+        transition-delay: .3s;
+    }
+    &::before{
+        background-color: #EE3158;
+    }
+    &::after{
+        background-color: #EE3158;
+    }
+}
+// violate btn ==================
+
+.violet-btn{
+    color: #fff;
+    background-color: #EE3158;
+    border: .5px solid #EE3158;
+    &:hover{
+        color: #fff !important;
+        transition-delay: .3s;
+        color: #333 !important;
+    }
+    &::before{
+        background-color: #fff;
+    }
+    &::after{
+        background-color: #fff;
+    }
+}
+
+
+
+
+// generic background image ==========================
+%generic-background-image{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+// margin ================================
+.mb-30{
+    margin-bottom: 30px;
+}
+

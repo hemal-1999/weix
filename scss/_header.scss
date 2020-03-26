@@ -1,0 +1,93 @@
+/*
+======================================================================
+                            1. HEADER CSS
+======================================================================
+*/
+// header body ========================
+.header-body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image:url(../images/bg-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #fff;
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#000,.4);
+    }
+    // navigation =====================================
+    nav {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        a.navbar-brand {
+            color: #fff;
+            font-weight: 500;
+            text-transform: capitalize;
+            font-size: 30px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ul {
+            li {
+                a {
+                    color: #fff;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+            li.active a{
+                color: #EE3158;
+            }
+        }
+    }
+
+    // header content =============================
+    .header-content {
+        position: absolute;
+        top: 53%;
+        left: 0;
+        transform: translateY(-50%);
+        right: 0;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        // sub heading ======================
+        h1 {
+            word-spacing: 2px;
+            letter-spacing: 2px;
+            font-size: 55px;
+            font-weight: 600;
+            span.sub-heading {
+                display: block;
+                font-weight: 400;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+                font-size: 25px;
+                margin-bottom: 31px;
+            }
+        }
+        
+        p.header-desc {
+          /*! margin-top: 32px; */
+          width: 60%;
+          margin: 32px auto 15px auto;
+          color: #f8f8f8;
+        }
+        a.generic-btn{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}

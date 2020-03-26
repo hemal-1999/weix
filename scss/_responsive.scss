@@ -1,0 +1,80 @@
+/*
+=============================================================================================
+                                RESPONSIVE
+=============================================================================================
+*/
+
+
+// responsive for medium device ===========================
+@media screen and (max-width: 992px){
+    .progress .progress-comment-box-desc{
+        margin: 55% auto !important;
+    }
+}
+// responsive for small device =====================
+
+@media screen and (max-width:768px){
+    .head-section{
+        .left-head-section{
+            text-align: center;
+            margin: auto;
+            padding-bottom: 30px;
+              width: fit-content;
+              margin-left: auto;
+              padding-bottom: 8px;
+              margin-right: auto;
+        }
+        .right-head-section{
+            p{
+                text-align: center;
+                margin: auto;
+            }
+        }
+    }
+    .header-body{
+         .header-content
+        h1{
+        font-size: 23px;
+    }
+        .navbar-collapse{
+            background-color: #000;
+            z-index: 99;
+            border-radius: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+    .header-body .header-content p.header-desc{
+        width: 100%;
+    }
+    .progress{
+        height: 1300px !important;
+        background-image: url(../images/dots.png) !important;
+        .progress-comment-box-desc{
+            transform: translateY(60px);
+            margin: auto !important;
+        }
+        
+        .progress-comment{
+            background-image: url(../images/b5.jpg);
+            height: 100%;
+            padding-bottom: 90px;
+        }
+    }
+    .generic-title{
+        h2{
+            font-size: 16px;
+        }
+    }
+    .getting-started-content{
+        h2{
+            font-size: 20px !important;
+        }
+        .generic-btn{
+                font-size: 12px;
+            }
+    }
+    .testimonial .testimonial-box-parent .testimonial-box .right-quote,.testimonial .testimonial-box-parent .testimonial-box .left-quote{
+        width: 30px !important;
+    }
+}

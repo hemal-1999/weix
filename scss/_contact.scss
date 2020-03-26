@@ -1,0 +1,52 @@
+/*
+=========================================================================================
+                                    CONTACT SECTION
+=========================================================================================
+*/
+
+
+.contact{
+    &-body{
+        margin-top: 70px;
+        .left-contact{
+        p:first-child{
+            color: #EE3158;
+            font-weight: 600;
+        }
+        h3{
+            font-size: 23px;
+            line-height: 1.7;
+            font-weight: 550;
+            font-family: 'Poppins', sans-serif;
+        }
+        p.address{
+            color: #777;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1.7;
+            span{
+                font-weight: 400;
+                display: block;
+                margin-top: 8px;
+            }
+        }
+        h2{
+            font-weight: 600;
+            color: #777;
+            font-family: 'Rubik', sans-serif;
+            margin-bottom: 30px;
+        }
+        p.email{
+            color: #777;
+        }
+    }
+        .right-contact{
+            input,textarea{
+                background-color: #F5F5F5;
+                border: none;
+                padding: 15px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
